@@ -1,0 +1,14 @@
+note over Browser:
+browser runs form.onsubmit function in spa.js:
+- Appends new note onto notes array.
+- Sets form value to empty string.
+- Rerenders list of notes with updated array.
+- Posts note to server.
+end note
+
+Browser->Server: HTTP Post https://fullstack-exampleapp.herokuapp.com/new_note_spa
+Server-->Browser: {"message":"note created"}
+
+note over Browser:
+logs {"message":"note created"} to console
+end note
